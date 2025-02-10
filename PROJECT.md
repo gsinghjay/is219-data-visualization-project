@@ -1,6 +1,3 @@
-Packing repository using repomix...
-Querying Gemini AI using gemini-2.0-flash-thinking-exp-01-21...
-```markdown
 # Food Safety Regulation Analysis Project: US vs EU
 
 ## 1. Project Goals
@@ -175,4 +172,3 @@ This is a preliminary timeline and may be adjusted based on project progress and
 **Contingency and Iteration:**  Throughout all phases, allow for contingency time for addressing unforeseen challenges, data quality issues, and iterative improvements based on feedback and insights gained. The project will be developed iteratively, with continuous evaluation and refinement of visualizations and features.
 
 This `PROJECT.md` provides a comprehensive outline for our food regulation analysis project, setting clear goals, defining the technical approach, and planning the implementation process. This document will serve as a guide throughout the project lifecycle.
-```
