@@ -3,4 +3,3 @@ node_modules
 *.log
 .DS_Store
 .repomix-output.txt
-.cursorrules
