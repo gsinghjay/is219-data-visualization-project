@@ -1,8 +1,3 @@
-
---- Repository Documentation ---
-
-# Food Regulation Analysis Project Documentation
-
 ## Overview
 
 This project analyzes and visualizes food safety regulations, comparing the United States and the European Union. It explores the potential health implications of regulatory differences using data visualization techniques.
@@ -16,70 +11,28 @@ This project analyzes and visualizes food safety regulations, comparing the Unit
     cd <repository_directory>
     ```
 
-2.  Install backend and frontend dependencies:
+2.  Install frontend dependencies:
 
     ```bash
-    cd server
-    npm install
-    cd ../client
+    cd client
     npm install
     ```
 
-3.  Configure the backend:
-    *   Create a `.env` file in the `server` directory.
-    *   Add your MongoDB URI and JWT secret to `.env`:
-
-        ```env
-        MONGODB_URI=mongodb://localhost:27017/food-regulation-db
-        PORT=5000
-        JWT_SECRET=your_jwt_secret
-        ```
-
-4.  Start the development servers:
+3.  Start the development server:
 
     ```bash
-    # In one terminal, start the backend:
-    cd server
-    npm run dev
-
-    # In another terminal, start the frontend:
-    cd ../client
+    # Start the frontend development server:
     npm run dev
     ```
 
-    The frontend application will be accessible at `http://localhost:5173` and the backend API at `http://localhost:5000`.
+    The frontend application will be accessible at `http://localhost:5173`
 
 ## Configuration
-
-### Backend Configuration (`server`)
-
-The backend server is configured using environment variables.
-
-*   **`MONGODB_URI`**:  MongoDB connection string. Set this in the `.env` file to connect to your MongoDB database.
-*   **`PORT`**:  Port for the backend server to listen on. Default is `5000`.
-*   **`JWT_SECRET`**: Secret key for JWT (JSON Web Token) signing.  While this project does not implement authentication, this variable is present in the default `.env` file.
 
 ### Frontend Configuration (`client`)
 
 The frontend is configured via Vite.
-*   **Proxy**:  The `client/vite.config.js` file configures a proxy to forward API requests from the frontend to the backend server running on `http://localhost:5000`. This is set up for development.
-
-    ```javascript
-    server: {
-        proxy: {
-          '/api': {
-            target: 'http://localhost:5000',
-            changeOrigin: true,
-            secure: false,
-          },
-          '/health': {
-            target: 'http://localhost:5000',
-            changeOrigin: true,
-            secure: false,
-          }
-        }
-      },
-    ```
+*   **Development Server**: The application runs on port 5173 by default and can be configured through `vite.config.js`.
 
 ## Package: Client (`client`)
 
@@ -300,7 +253,7 @@ npm install
         *   Transforms data into an array of objects with `region`, `illnessRate`, and `year` properties.
         *   Returns a Promise that resolves to an array of processed foodborne illness data.
 
-### Dependencies and Requirements (Client)
+### Dependencies and Requirements
 
 *   `react`: JavaScript library for building user interfaces.
 *   `react-dom`:  Provides DOM-specific methods for React.
@@ -312,76 +265,3 @@ npm install
 *   `react-chartjs-2`: React wrapper for Chart.js.
 *   `d3`: JavaScript library for data visualization.
 *   `papaparse`:  Fast and powerful CSV parser for JavaScript.
-
-## Package: Server (`server`)
-
-### Summary
-
-The `server` package is an Express.js backend application. It provides a REST API to serve food regulation data and related information.
-
-### Installation
-
-To install dependencies, navigate to the `server` directory and run:
-
-```bash
-cd server
-npm install
-```
-
-### Controllers
-
-#### `foodRegulationController.js`
-
-*   **Summary**:  Contains controller functions for handling requests related to food regulation data.
-*   **Public Interfaces (exports)**:
-
-    *   **`getAllRegulations(req, res)`**:
-        *   Retrieves all food regulations from the database.
-        *   Supports optional filtering by `category`, `status` (banned-in-eu, banned-in-us), and `ingredient` (using case-insensitive regex).
-        *   Responds with a JSON array of regulations.
-
-    *   **`getRegulationByIngredient(req, res)`**:
-        *   Retrieves a specific food regulation by ingredient name.
-        *   Ingredient name is passed as a parameter in the request URL (`req.params.ingredient`).
-        *   Responds with a JSON object of the regulation if found, or a 404 error if not found.
-
-    *   **`compareRegulations(req, res)`**:
-        *   Aggregates food regulations to compare US and EU regulatory statuses.
-        *   Groups regulations by `us_allowed` and `eu_allowed` statuses.
-        *   Responds with a JSON array of aggregated regulation comparison data.
-
-    *   **`getHealthImpactStats(req, res)`**:
-        *   Aggregates health impact statistics based on severity levels from the `healthConcerns` field of regulations.
-        *   Groups regulations by `severityLevel` from health concerns.
-        *   Responds with a JSON array of aggregated health impact statistics.
-
-    *   **`addRegulation(req, res)`**:
-        *   Adds a new food regulation to the database.
-        *   Regulation data is expected in the request body (`req.body`).
-        *   Responds with the saved regulation object and a 201 status on success, or a 400 error on validation failure.
-
-    *   **`updateRegulation(req, res)`**:
-        *   Updates an existing food regulation.
-        *   Identifies the regulation to update by `ingredient` name in the request parameters (`req.params.ingredient`).
-        *   Updated regulation data is expected in the request body (`req.body`).
-        *   Responds with the updated regulation object on success, or a 404 error if the ingredient is not found, or a 400 error on validation failure.
-
-### Server Endpoints
-
-*   **`/health`**:
-    *   **Method**: `GET`
-    *   **Summary**:  Health check endpoint to verify server status.
-    *   **Response**: JSON object with `status: 'healthy'`, `timestamp`, and `uptime`.
-
-### Dependencies and Requirements (Server)
-
-*   `express`:  Fast, unopinionated, minimalist web framework for Node.js.
-*   `cors`:  Middleware for enabling Cross-Origin Resource Sharing.
-*   `helmet`:  Middleware for securing Express apps by setting HTTP headers.
-*   `morgan`: HTTP request logger middleware for Node.js.
-*   `dotenv`:  Loads environment variables from a `.env` file.
-*   `nodemon`: Utility that monitors for any changes in your node.js application and automatically restarts the server - useful for development.
-
-This documentation provides a comprehensive guide to the Food Regulation Analysis project, covering setup, configuration, and usage of both the client and server components.
-
---- End of Documentation ---
