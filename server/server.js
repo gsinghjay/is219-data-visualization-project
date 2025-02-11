@@ -3,8 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
-const mongoose = require('mongoose');
-const foodRegulationRoutes = require('./routes/foodRegulationRoutes');
+const path = require('path');
 
 const app = express();
 
@@ -14,8 +13,8 @@ app.use(helmet());
 app.use(morgan('dev'));
 app.use(express.json());
 
-// Routes
-app.use('/api', foodRegulationRoutes);
+// Serve static files from the data directory
+app.use('/data', express.static(path.join(__dirname, '..', 'data')));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
@@ -25,11 +24,6 @@ app.use((err, req, res, next) => {
     message: process.env.NODE_ENV === 'development' ? err.message : undefined
   });
 });
-
-// Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI)
-  .then(() => console.log('Connected to MongoDB'))
-  .catch(err => console.error('MongoDB connection error:', err));
 
 // Health check endpoint
 app.get('/health', (req, res) => {
