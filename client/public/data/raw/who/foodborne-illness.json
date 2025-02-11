@@ -1,0 +1,721 @@
+{
+"copyright": "(c) World Health Organization",
+"dataset":
+[
+{
+"label": "CYCU",
+"display": "COUNTRY_YEARLY_CORE_UNITS"
+}
+],
+"attribute":
+[
+{
+"label": "CATEGORY",
+"display": "Category"
+}
+],
+"dimension":
+[
+{
+"label": "GHO",
+"display": "Indicator",
+"isMeasure": true,
+"code":
+[
+{
+"label": "FOODBORNE_ILL_100K_TOTAL",
+"display": "Foodborne illnesses per 100,000, all ages",
+"display_sequence": 0,
+"url": "",
+"attr":
+[
+{
+"category": "CATEGORY",
+"value": "Foodborne Diseases"
+}
+]
+}
+]
+},
+{
+"label": "PUBLISHSTATE",
+"display": "PUBLISH STATES",
+"isMeasure": false,
+"code":
+[
+{
+"label": "DRAFT",
+"display": "Draft",
+"display_sequence": 0,
+"url": "",
+"attr":
+[
+]
+}
+]
+},
+{
+"label": "YEAR",
+"display": "Year",
+"isMeasure": false,
+"code":
+[
+{
+"label": "2010",
+"display": "2010",
+"display_sequence": 79897990,
+"url": "",
+"attr":
+[
+]
+}
+]
+},
+{
+"label": "REGION",
+"display": "WHO region",
+"isMeasure": false,
+"code":
+[
+{
+"label": "AFR",
+"display": "Africa",
+"display_sequence": 10,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "AMR",
+"display": "Americas",
+"display_sequence": 20,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "SEAR",
+"display": "South-East Asia",
+"display_sequence": 30,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "EUR",
+"display": "Europe",
+"display_sequence": 40,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "EMR",
+"display": "Eastern Mediterranean",
+"display_sequence": 50,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "WPR",
+"display": "Western Pacific",
+"display_sequence": 60,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "GLOBAL",
+"display": "Global",
+"display_sequence": 5,
+"url": "",
+"attr":
+[
+]
+}
+]
+},
+{
+"label": "SUBREGION",
+"display": "WHO subregions by child and adult mortality (GBD)",
+"isMeasure": false,
+"code":
+[
+{
+"label": "AFRD",
+"display": "Africa region, stratum D (AFR D)",
+"display_sequence": 10,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "AFRE",
+"display": "Africa region, stratum E (AFR E)",
+"display_sequence": 20,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "AMRA",
+"display": "Americas region, stratum A (AMR A)",
+"display_sequence": 30,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "AMRB",
+"display": "Americas region, stratum B (AMR B)",
+"display_sequence": 40,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "AMRD",
+"display": "Americas region, stratum D (AMR D)",
+"display_sequence": 50,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "EMRB",
+"display": "Eastern Mediterranean region, stratum B (EMR B)",
+"display_sequence": 60,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "EMRD",
+"display": "Eastern Mediterranean region, stratum D (EMR D)",
+"display_sequence": 70,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "EURA",
+"display": "Europe region, stratum A (EUR A)",
+"display_sequence": 80,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "EURB",
+"display": "Europe region, stratum B (EUR B)",
+"display_sequence": 90,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "EURC",
+"display": "Europe region, stratum C (EUR C)",
+"display_sequence": 100,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "SEARB",
+"display": "South East Asia region, stratum B (SEAR B)",
+"display_sequence": 110,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "SEARD",
+"display": "South East Asia region, stratum D (SEAR D)",
+"display_sequence": 120,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "WPRA",
+"display": "Western Pacific region, stratum A (WPR A)",
+"display_sequence": 130,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "WPRB",
+"display": "Western Pacific region, stratum B (WPR B)",
+"display_sequence": 140,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "WORLD",
+"display": "World",
+"display_sequence": 5,
+"url": "",
+"attr":
+[
+]
+}
+]
+},
+{
+"label": "FOODBORNE_HAZARD1",
+"display": "Foodborne hazard (Level 1)",
+"isMeasure": false,
+"code":
+[
+{
+"label": "FOODBORNE_HAZARD1_ALL",
+"display": "ALL HAZARDS",
+"display_sequence": 0,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD1_DIA",
+"display": "Diarrheal disease agents",
+"display_sequence": 100,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD1_INF",
+"display": "Invasive infectious disease agents",
+"display_sequence": 200,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD1_HEL",
+"display": "Helminths",
+"display_sequence": 300,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD1_TOX",
+"display": "Chemicals and toxins",
+"display_sequence": 400,
+"url": "",
+"attr":
+[
+]
+}
+]
+},
+{
+"label": "FOODBORNE_HAZARD2",
+"display": "Foodborne hazard (Level 2)",
+"isMeasure": false,
+"code":
+[
+{
+"label": "FOODBORNE_HAZARD2_BAC",
+"display": "Bacteria",
+"display_sequence": 110,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD2_PRZ",
+"display": "Protozoa",
+"display_sequence": 120,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD2_VIR",
+"display": "Viruses",
+"display_sequence": 130,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD2_CES",
+"display": "Cestodes",
+"display_sequence": 310,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD2_NEM",
+"display": "Nematodes",
+"display_sequence": 320,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD2_TRE",
+"display": "Trematodes",
+"display_sequence": 330,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD2_AFL",
+"display": "Aflatoxin",
+"display_sequence": 410,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD2_CYA",
+"display": "Cassava cyanide",
+"display_sequence": 420,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD2_DIO",
+"display": "Dioxin",
+"display_sequence": 430,
+"url": "",
+"attr":
+[
+]
+}
+]
+},
+{
+"label": "FOODBORNE_HAZARD3",
+"display": "Foodborne hazard (Level 3)",
+"isMeasure": false,
+"code":
+[
+{
+"label": "FOODBORNE_HAZARD3_CAM",
+"display": "Campylobacter spp.",
+"display_sequence": 111,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_ENT",
+"display": "Entamoeba histolytica",
+"display_sequence": 122,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_SHI",
+"display": "Shigella spp.",
+"display_sequence": 116,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_NON",
+"display": "Non-typhoidal S. enterica",
+"display_sequence": 115,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_VIB",
+"display": "Vibrio cholerae",
+"display_sequence": 117,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_CRY",
+"display": "Cryptosporidium spp.",
+"display_sequence": 121,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_GIA",
+"display": "Giardia spp.",
+"display_sequence": 123,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_NOR",
+"display": "Norovirus",
+"display_sequence": 131,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_BRU",
+"display": "Brucella spp.",
+"display_sequence": 211,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_LIS",
+"display": "Listeria monocytogenes",
+"display_sequence": 212,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_MYC",
+"display": "Mycobacterium bovis",
+"display_sequence": 213,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_SAP",
+"display": "Salmonella Paratyphi A",
+"display_sequence": 214,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_SAT",
+"display": "Salmonella Typhi",
+"display_sequence": 215,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_TOX",
+"display": "Toxoplasma gondii",
+"display_sequence": 221,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_HEA",
+"display": "Hepatitis A virus",
+"display_sequence": 231,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_GRA",
+"display": "Echinococcus granulosus",
+"display_sequence": 311,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_MUL",
+"display": "Echinococcus multilocularis",
+"display_sequence": 312,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_TAE",
+"display": "Taenia solium",
+"display_sequence": 313,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_ASC",
+"display": "Ascaris spp.",
+"display_sequence": 321,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_TRI",
+"display": "Trichinella spp.",
+"display_sequence": 322,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_CLO",
+"display": "Clonorchis sinensis",
+"display_sequence": 331,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_FAS",
+"display": "Fasciola spp.",
+"display_sequence": 332,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_FLU",
+"display": "Intestinal flukes",
+"display_sequence": 333,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_OPI",
+"display": "Opisthorchis spp.",
+"display_sequence": 334,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_PAR",
+"display": "Paragonimus spp.",
+"display_sequence": 335,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_AFL",
+"display": "Aflatoxin",
+"display_sequence": 411,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_CYA",
+"display": "Cassava cyanide",
+"display_sequence": 422,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_DIO",
+"display": "Dioxin",
+"display_sequence": 433,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_ENP",
+"display": "Enteropathogenic E. coli",
+"display_sequence": 112,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_ENX",
+"display": "Enterotoxigenic E. coli",
+"display_sequence": 113,
+"url": "",
+"attr":
+[
+]
+},
+{
+"label": "FOODBORNE_HAZARD3_SHE",
+"display": "Shiga toxin-producing E. coli",
+"display_sequence": 114,
+"url": "",
+"attr":
+[
+]
+}
+]
+}
+],
+"fact":
+[
+]
+}
