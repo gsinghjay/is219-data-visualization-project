@@ -17,5 +17,16 @@ export default defineConfig({
         secure: false,
       }
     }
+  },
+  resolve: {
+    alias: {
+      '@': '/src',
+      '@data': '/data'
+    }
+  },
+  // Allow importing JSON and CSV files
+  assetsInclude: ['**/*.csv'],
+  json: {
+    stringify: true
   }
 })
